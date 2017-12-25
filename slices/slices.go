@@ -24,6 +24,3 @@ func ChunkStringSlice( ss []string, size int ) ( [][]string, int ) {
 
 	return chunk, pice
 }
-
-
-
