@@ -54,3 +54,14 @@ func StringSliceIndexOf( s[]string, item string ) int {
 	}
 	return -1
 }
+
+func StringSliceRemove( s1, s2[]string ) []string {
+	var result = []string{}
+
+	for _, v := range s1 {
+		if StringSliceIndexOf(s2, v) < 0 {
+			result = append(result, v)
+		}
+	}
+	return result
+}
