@@ -43,3 +43,14 @@ func StringSliceEqual(a, b []string) bool {
 
     return true
 }
+
+
+func StringSliceIndexOf( s[]string, item string ) int {
+
+	for i, v := range s {
+		if ( v == item ) {
+			return i
+		}
+	}
+	return -1
+}
