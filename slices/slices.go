@@ -15,7 +15,7 @@ func ChunkStringSlice( ss []string, size int ) ( [][]string, int ) {
 	)
 
 	for i:=0; i < pice ; i++ {
-		
+
 		end = integer.Min( end, length )
 		chunk = append( chunk, ss[cursor:end] )
 		cursor = end
