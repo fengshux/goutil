@@ -1,7 +1,7 @@
 package slices
 
 import(
-	"goutil/integer"
+	"github.com/radrupt/goutil/integer"
 )
 
 func ChunkStringSlice( ss []string, size int ) ( [][]string, int ) {
